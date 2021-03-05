@@ -11,7 +11,9 @@ confinement: strict
 adopt-info: projet-serre-api
 
 architectures:
-  - build-on: [arm64, armhf, amd64]
+  - build-on: arm64
+  - build-on: armhf
+  - build-on: amd64
 
 apps:
   projet-serre-api:
