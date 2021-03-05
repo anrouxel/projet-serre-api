@@ -1,0 +1,29 @@
+{
+  "name": "projet-serre-api",
+  "version": "1.0.0",
+  "description": "API de communication entre le serveur et Android",
+  "main": "index.js",
+  "bin": {
+    "projet-serre-api": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anrouxel/projet-serre-api.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "anrouxel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anrouxel/projet-serre-api/issues"
+  },
+  "homepage": "https://github.com/anrouxel/projet-serre-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mariadb": "^2.5.3"
+  }
+}
