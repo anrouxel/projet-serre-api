@@ -18,6 +18,8 @@ architectures:
 apps:
   projet-serre-api:
     command: bin/projet-serre-api
+    daemon: simple
+    restart-condition: always
     plugs: [home, network, network-bind]
 
 parts:
