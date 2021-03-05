@@ -7,7 +7,7 @@
     "projet-serre-api": "index.js"
   },
   "scripts": {
-    "projet-serre-api": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
