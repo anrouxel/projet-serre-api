@@ -8,6 +8,8 @@ base: core20
 grade: stable
 confinement: strict
 
+adopt-info: projet-serre-api
+
 architectures:
   - build-on: [amd64, arm64, armhf]
 
