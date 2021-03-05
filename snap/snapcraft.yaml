@@ -11,7 +11,9 @@ confinement: strict
 adopt-info: projet-serre-api
 
 architectures:
-  - build-on: [amd64, arm64, armhf]
+  - build-on: arm64
+  - build-on: armhf
+  - build-on: amd64
 
 apps:
   projet-serre-api:
@@ -26,7 +28,7 @@ parts:
     source-type: git
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git describe --tags | sed 's/v//')"
+      snapcraftctl set-version "$(git describe --tags | sed 's/v//' | sed "s/-g/%/"  | cut -d "%" -f1)"
     build-packages:
       - git
       - sed
