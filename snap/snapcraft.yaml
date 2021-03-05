@@ -28,7 +28,7 @@ parts:
     source-type: git
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git describe --tags | sed 's/v//')"
+      snapcraftctl set-version "$(git describe --tags | sed 's/v//' | sed "s/-g/%/"  | cut -d "%" -f1)"
     build-packages:
       - git
       - sed
