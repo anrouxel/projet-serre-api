@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "API de communication entre le serveur et Android",
   "main": "index.js",
+  "bin": {
+    "projet-serre-api": "index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "projet-serre-api": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
