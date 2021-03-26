@@ -8,9 +8,9 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.json(JSON.stringify({
+    res.json({
         "result": "ok"
-    }))
+    })
 })
 
 app.get('/config/apply/:serre/:aromate/:config/:o2_min/:o2_max', (req, res) => {
