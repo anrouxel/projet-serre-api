@@ -21,13 +21,13 @@ app.get('/config/apply/:serre/:aromate/:config/:o2_min/:o2_max', (req, res) => {
         "o2_min": parseInt(req.params.o2_min),
         "o2_max": parseInt(req.params.o2_max)
     })
-    fs.writeFileSync('/usr/local/bin/config-projet-serre-api.json', files)
+    fs.writeFileSync('config-projet-serre-api.json', files)
     console.log(JSON.parse(files))
     res.json(JSON.parse(files))
 })
 
 app.get('/config/read', (req, res) => {
-    let files = JSON.parse(fs.readFileSync('/usr/local/bin/config-projet-serre-api.json'))
+    let files = JSON.parse(fs.readFileSync('config-projet-serre-api.json'))
     console.log(files)
     res.json(files)
 })
