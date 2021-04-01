@@ -8,9 +8,8 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.json({
-        "result": "ok"
-    })
+    let data = JSON.stringify({"result": "ok"})
+    res.json(JSON.parse(data))
 })
 
 app.get('/config/apply/:serre/:aromate/:config/:o2_min/:o2_max', (req, res) => {
@@ -30,6 +29,17 @@ app.get('/config/read', (req, res) => {
     let files = JSON.parse(fs.readFileSync('config-projet-serre-api.json'))
     console.log(files)
     res.json(files)
+})
+
+app.get('/data', (req, res) => {
+    let data = JSON.stringify({
+        "o2":75,
+        "co2":25,
+        "temperature":26,
+        "humidity": 50,
+        "brightness": 300
+    })
+    res.json(JSON.parse(data))
 })
 
 app.listen(port, () => {
