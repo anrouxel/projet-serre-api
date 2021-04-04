@@ -26,7 +26,7 @@ apps:
     command: bin/rasp-serial
     daemon: simple
     restart-condition: always
-    plugs: [home, serial-port]
+    plugs: [home, serial-port, raw-usb]
 
 parts:
   projet-serre-api:
