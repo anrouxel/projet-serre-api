@@ -21,12 +21,6 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, network, network-bind]
-  
-  projet-serre-serial-link:
-    command: bin/rasp-serial
-    daemon: simple
-    restart-condition: always
-    plugs: [home, serial-port, raw-usb]
 
 parts:
   projet-serre-api:
@@ -40,10 +34,3 @@ parts:
     build-packages:
       - git
       - sed
-
-  projet-serre-serial-link:
-    plugin: python
-    source: https://github.com/anrouxel/projet-serre-serial-link.git
-    source-type: git
-    python-packages:
-      - pip
