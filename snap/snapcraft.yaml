@@ -44,5 +44,6 @@ parts:
   projet-serre-serial-link:
     plugin: python
     source: https://github.com/anrouxel/projet-serre-serial-link.git
+    source-type: git
     python-packages:
       - pip
