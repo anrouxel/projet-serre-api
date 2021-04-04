@@ -15,7 +15,10 @@ architectures:
   - build-on: armhf
   - build-on: amd64
 
-
+slots:
+  serial:
+    interface: serial-port
+    path: /dev/ttyACM0
 
 apps:
   projet-serre-api:
