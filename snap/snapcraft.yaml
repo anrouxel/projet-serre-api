@@ -43,7 +43,6 @@ parts:
 
   projet-serre-serial-link:
     plugin: python
-    python-version: python3
     source: https://github.com/anrouxel/projet-serre-serial-link.git
     python-packages:
       - pip
