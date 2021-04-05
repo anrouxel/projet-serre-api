@@ -6,7 +6,7 @@ description: |
 
 base: core20
 grade: stable
-confinement: classic
+confinement: strict
 
 adopt-info: projet-serre
 
@@ -26,7 +26,7 @@ apps:
     command: bin/rasp-serial
     daemon: simple
     restart-condition: always
-    plugs: [home, serial-port]
+    plugs: [home, removable-media, serial-port, raw-usb]
 
 parts:
   projet-serre:
