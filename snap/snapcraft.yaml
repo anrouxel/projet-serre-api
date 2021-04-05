@@ -15,11 +15,6 @@ architectures:
   - build-on: armhf
   - build-on: amd64
 
-slots:
-  bt-serial:
-    interface: serial-port
-    path: /dev/ttyACM0
-
 apps:
   projet-serre:
     command: bin/projet-serre-api
@@ -32,7 +27,6 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial-port]
-    slots: [bt-serial]
 
 parts:
   projet-serre:
