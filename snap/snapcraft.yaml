@@ -29,8 +29,9 @@ apps:
     plugs: [home]
 
 slots:
-  interface: serial-port
-  path: /dev/ttyACM0
+  bt-serial:
+    interface: serial-port
+    path: /dev/ttyACM0
 
 parts:
   projet-serre:
