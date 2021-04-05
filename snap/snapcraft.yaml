@@ -26,9 +26,10 @@ apps:
     command: bin/rasp-serial
     daemon: simple
     restart-condition: always
-    plugs: [home, serial-port]
+    plugs: [home]
 
 slots:
+  interface: serial-port
   path: /dev/ttyACM0
 
 parts:
