@@ -30,7 +30,7 @@ apps:
 
 slots:
   bt-serial:
-    interface: serial-port
+    interfaces: serial-port
     path: /dev/ttyACM0
 
 parts:
