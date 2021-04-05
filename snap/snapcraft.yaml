@@ -15,6 +15,10 @@ architectures:
   - build-on: armhf
   - build-on: amd64
 
+plugs:
+  serial:
+    interface: serial-port
+
 apps:
   projet-serre:
     command: bin/projet-serre-api
@@ -26,7 +30,7 @@ apps:
     command: bin/rasp-serial
     daemon: simple
     restart-condition: always
-    plugs: [home]
+    plugs: [home, serial]
 
 parts:
   projet-serre:
