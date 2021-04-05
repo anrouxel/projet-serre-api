@@ -3,12 +3,11 @@ license: GPL-3.0
 summary: API de communication entre le serveur et Android
 description: |
   API de communication entre le serveur et Android
-
 base: core20
 grade: stable
-confinement: classic
+confinement: strict
 
-adopt-info: projet-serre
+adopt-info: projet-serre-api
 
 architectures:
   - build-on: arm64
@@ -16,20 +15,14 @@ architectures:
   - build-on: amd64
 
 apps:
-  projet-serre:
+  projet-serre-api:
     command: bin/projet-serre-api
     daemon: simple
     restart-condition: always
     plugs: [home, network, network-bind]
-  
-  projet-serre-serial-link:
-    command: bin/rasp-serial
-    daemon: simple
-    restart-condition: always
-    plugs: [home, serial-port]
 
 parts:
-  projet-serre:
+  projet-serre-api:
     plugin: npm
     npm-node-version: "14.16.0"
     source: https://github.com/anrouxel/projet-serre-api.git
@@ -40,9 +33,3 @@ parts:
     build-packages:
       - git
       - sed
-
-  projet-serre-serial-link:
-    plugin: python
-    source: https://github.com/anrouxel/projet-serre-serial-link.git
-    source-type: git
-    python-packages: [pip, pyserial]
