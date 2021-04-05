@@ -27,10 +27,11 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial-port]
-    slots:
-      serial:
-        interface: serial-port
-        path: /udev/ttyACM0
+
+slots:
+  serial:
+    interface: serial-port
+    path: /udev/ttyACM0
 
 parts:
   projet-serre:
