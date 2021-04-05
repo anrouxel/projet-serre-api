@@ -41,14 +41,8 @@ parts:
       - git
       - sed
 
-  projet-serre-link:
-    plugin: npm
-    npm-node-version: "14.16.0"
-    source: https://github.com/anrouxel/projet-serre-api-link.git
+  projet-serre-serial-link:
+    plugin: python
+    source: https://github.com/anrouxel/projet-serre-serial-link.git
     source-type: git
-
-#  projet-serre-serial-link:
-#    plugin: python
-#    source: https://github.com/anrouxel/projet-serre-serial-link.git
-#    source-type: git
-#    python-packages: [pip, pyserial]
+    python-packages: [pip, pyserial]
