@@ -16,7 +16,7 @@ architectures:
   - build-on: amd64
 
 slots:
-  serial-1:
+  bt-serial:
     interface: serial-port
     path: /dev/ttyACM0
 
@@ -32,7 +32,7 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial-port]
-    slots: [serial-1]
+    slots: [bt-serial]
 
 parts:
   projet-serre:
