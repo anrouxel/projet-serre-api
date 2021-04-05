@@ -26,11 +26,9 @@ apps:
     command: bin/rasp-serial
     daemon: simple
     restart-condition: always
-    plugs: [home, serial]
-
-plugs:
-  serial:
-    interface: serial-port
+    plugs: [home, serial-port]
+    slot:
+      path: /dev/ttyACM0
 
 parts:
   projet-serre:
