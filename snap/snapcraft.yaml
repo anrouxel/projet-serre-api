@@ -19,6 +19,10 @@ plugs:
   serial:
     interface: serial-port
 
+slots:
+  serial-1:
+    interface: serial-port
+
 apps:
   projet-serre:
     command: bin/projet-serre-api
@@ -31,6 +35,7 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial]
+    slots: [serial-1]
 
 parts:
   projet-serre:
