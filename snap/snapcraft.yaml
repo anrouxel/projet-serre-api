@@ -32,7 +32,7 @@ apps:
 slots:
   serial:
     interface: serial-port
-    path: /udev/ttyACM0
+    path: /dev/ttyACM0
 
 parts:
   projet-serre:
