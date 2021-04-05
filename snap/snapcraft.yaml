@@ -27,8 +27,9 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial-port]
-    slot:
-      path: /dev/ttyACM0
+
+slots:
+  path: /dev/ttyACM0
 
 parts:
   projet-serre:
