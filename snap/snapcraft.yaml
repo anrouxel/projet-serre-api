@@ -16,99 +16,69 @@ architectures:
   - build-on: amd64
 
 slots:
-  bcm-gpio-0:
-    interface: gpio
-    number: 0
-  bcm-gpio-1:
-    interface: gpio
-    number: 1
-  bcm-gpio-2:
-    interface: gpio
-    number: 2
-  bcm-gpio-3:
-    interface: gpio
-    number: 3
-  bcm-gpio-4:
-    interface: gpio
-    number: 4
-  bcm-gpio-5:
-    interface: gpio
-    number: 5
-  bcm-gpio-6:
-    interface: gpio
-    number: 6
-  bcm-gpio-7:
-    interface: gpio
-    number: 7
-  bcm-gpio-8:
-    interface: gpio
-    number: 8
-  bcm-gpio-9:
-    interface: gpio
-    number: 9
-  bcm-gpio-10:
-    interface: gpio
-    number: 10
-  bcm-gpio-11:
-    interface: gpio
-    number: 11
-  bcm-gpio-12:
-    interface: gpio
-    number: 12
-  bcm-gpio-13:
-    interface: gpio
-    number: 13
-  bcm-gpio-14:
-    interface: gpio
-    number: 14
-  bcm-gpio-15:
-    interface: gpio
-    number: 15
-  bcm-gpio-16:
-    interface: gpio
-    number: 16
-  bcm-gpio-17:
-    interface: gpio
-    number: 17
-  bcm-gpio-18:
-    interface: gpio
-    number: 18
-  bcm-gpio-19:
-    interface: gpio
-    number: 19
-  bcm-gpio-20:
+  gpio-20:
     interface: gpio
     number: 20
-  bcm-gpio-21:
-    interface: gpio
-    number: 21
-  bcm-gpio-22:
-    interface: gpio
-    number: 22
-  bcm-gpio-23:
-    interface: gpio
-    number: 23
-  bcm-gpio-24:
-    interface: gpio
-    number: 24
-  bcm-gpio-25:
-    interface: gpio
-    number: 25
-  bcm-gpio-26:
+  gpio-26:
     interface: gpio
     number: 26
-  bcm-gpio-27:
+  gpio-27:
     interface: gpio
     number: 27
+  gpio-44:
+    interface: gpio
+    number: 44
+  gpio-45:
+    interface: gpio
+    number: 45
+  gpio-46:
+    interface: gpio
+    number: 46
+  gpio-47:
+    interface: gpio
+    number: 47
+  gpio-48:
+    interface: gpio
+    number: 48
+  gpio-49:
+    interface: gpio
+    number: 49
+  gpio-60:
+    interface: gpio
+    number: 60
+  gpio-61:
+    interface: gpio
+    number: 61
+  gpio-65:
+    interface: gpio
+    number: 65
+  gpio-66:
+    interface: gpio
+    number: 66
+  gpio-67:
+    interface: gpio
+    number: 67
+  gpio-68:
+    interface: gpio
+    number: 68
+  gpio-69:
+    interface: gpio
+    number: 69
+  gpio-112:
+    interface: gpio
+    number: 112
+  gpio-115:
+    interface: gpio
+    number: 115
+  gpio-117:
+    interface: gpio
+    number: 117
   i2c-0:
     interface: i2c
     path: /dev/i2c-0
   i2c-1:
     interface: i2c
     path: /dev/i2c-1
-  i2c-2:
-    interface: i2c
-    path: /dev/i2c-2
 
 apps:
   projet-serre:
