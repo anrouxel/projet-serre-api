@@ -23,7 +23,7 @@ apps:
     plugs: [home, network, network-bind]
   
   projet-serre-serial-link:
-    command: bin/rasp-serial device_port:=/dev/ttyACM0
+    command: bin/rasp-serial
     daemon: simple
     restart-condition: always
     plugs: [home, serial]
