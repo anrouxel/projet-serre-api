@@ -27,6 +27,7 @@ apps:
     daemon: simple
     restart-condition: always
     plugs: [home, serial-port]
+    slots: [serial]
 
 slots:
   serial:
