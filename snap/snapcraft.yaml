@@ -16,7 +16,7 @@ architectures:
 
 apps:
   projet-serre-api:
-    command: bin/projet-serre-api
+    command: usr/bin/python3 $SNAP/bin/projet-serre-serial
     daemon: simple
     restart-condition: always
     plugs: [home, network, network-bind]
