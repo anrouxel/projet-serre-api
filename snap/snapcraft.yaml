@@ -30,6 +30,8 @@ parts:
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/v//' | sed "s/-g/%/"  | cut -d "%" -f1)"
+    build-snaps:
+      - node/14/stable
     build-packages:
       - git
       - sed
