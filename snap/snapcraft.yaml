@@ -3,7 +3,7 @@ license: GPL-3.0
 summary: API de communication entre le serveur et Android
 description: |
   API de communication entre le serveur et Android
-base: core20
+base: core22
 grade: stable
 confinement: strict
 
