@@ -24,14 +24,14 @@ apps:
 parts:
   projet-serre-api:
     plugin: npm
-    npm-node-version: "18.15.0"
+    npm-node-version: "14.16.0"
     source: https://github.com/anrouxel/projet-serre-api.git
     source-type: git
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/v//' | sed "s/-g/%/"  | cut -d "%" -f1)"
     build-snaps:
-      - node/18/stable
+      - node/14/stable
     build-packages:
       - git
       - sed
