@@ -24,7 +24,8 @@ apps:
 parts:
   projet-serre-api:
     plugin: npm
-    npm-node-version: "14.16.0"
+    npm-node-version: 14.16.0
+    npm-include-node: true
     source: https://github.com/anrouxel/projet-serre-api.git
     source-type: git
     override-pull: |
